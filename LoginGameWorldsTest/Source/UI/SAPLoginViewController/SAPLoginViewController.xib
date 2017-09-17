@@ -27,7 +27,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="uPm-9f-OrR">
-                    <rect key="frame" x="62" y="200" width="250" height="92"/>
+                    <rect key="frame" x="62" y="150" width="250" height="157"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbW-dh-Bku">
                             <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
@@ -47,6 +47,22 @@
                                 <outlet property="delegate" destination="-1" id="j78-WE-nnK"/>
                             </connections>
                         </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5J-rh-sQ8">
+                            <rect key="frame" x="0.0" y="124" width="250" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="Login"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layerCornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="layerBorderColor">
+                                    <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layerBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
                     </subviews>
                 </stackView>
             </subviews>
@@ -54,7 +70,7 @@
             <constraints>
                 <constraint firstItem="uPm-9f-OrR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bxH-Qv-thn"/>
                 <constraint firstItem="uPm-9f-OrR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2:3" id="f4e-Zl-d7k"/>
-                <constraint firstItem="uPm-9f-OrR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="200" id="vJR-Uh-yCi"/>
+                <constraint firstItem="uPm-9f-OrR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="vJR-Uh-yCi"/>
             </constraints>
             <point key="canvasLocation" x="34.5" y="54.5"/>
         </view>
