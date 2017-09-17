@@ -23,6 +23,16 @@
 		5E307EE01F6E922F000CD620 /* SAPNetworkContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EDF1F6E922F000CD620 /* SAPNetworkContext.m */; };
 		5E307EE41F6E9AD7000CD620 /* SAPDataTaskContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EE31F6E9AD7000CD620 /* SAPDataTaskContext.m */; };
 		5E307EE91F6E9F01000CD620 /* SAPDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EE81F6E9F01000CD620 /* SAPDispatch.m */; };
+		5E307F251F6EDE8E000CD620 /* SAPGameWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F241F6EDE8E000CD620 /* SAPGameWorld.m */; };
+		5E307F551F6EE3EE000CD620 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5E307F3F1F6EE3EE000CD620 /* Info.plist */; };
+		5E307F561F6EE3EE000CD620 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F421F6EE3EE000CD620 /* JSONModel.m */; };
+		5E307F571F6EE3EE000CD620 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F441F6EE3EE000CD620 /* JSONModelClassProperty.m */; };
+		5E307F581F6EE3EE000CD620 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F461F6EE3EE000CD620 /* JSONModelError.m */; };
+		5E307F591F6EE3EE000CD620 /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F4B1F6EE3EE000CD620 /* JSONAPI.m */; };
+		5E307F5A1F6EE3EE000CD620 /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F4D1F6EE3EE000CD620 /* JSONHTTPClient.m */; };
+		5E307F5B1F6EE3EE000CD620 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F4F1F6EE3EE000CD620 /* JSONModel+networking.m */; };
+		5E307F5C1F6EE3EE000CD620 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F521F6EE3EE000CD620 /* JSONKeyMapper.m */; };
+		5E307F5D1F6EE3EE000CD620 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F541F6EE3EE000CD620 /* JSONValueTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +67,27 @@
 		5E307EE31F6E9AD7000CD620 /* SAPDataTaskContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPDataTaskContext.m; sourceTree = "<group>"; };
 		5E307EE71F6E9F01000CD620 /* SAPDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPDispatch.h; sourceTree = "<group>"; };
 		5E307EE81F6E9F01000CD620 /* SAPDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPDispatch.m; sourceTree = "<group>"; };
+		5E307F231F6EDE8E000CD620 /* SAPGameWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPGameWorld.h; sourceTree = "<group>"; };
+		5E307F241F6EDE8E000CD620 /* SAPGameWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPGameWorld.m; sourceTree = "<group>"; };
+		5E307F3F1F6EE3EE000CD620 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E307F411F6EE3EE000CD620 /* JSONModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModel.h; sourceTree = "<group>"; };
+		5E307F421F6EE3EE000CD620 /* JSONModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModel.m; sourceTree = "<group>"; };
+		5E307F431F6EE3EE000CD620 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelClassProperty.h; sourceTree = "<group>"; };
+		5E307F441F6EE3EE000CD620 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelClassProperty.m; sourceTree = "<group>"; };
+		5E307F451F6EE3EE000CD620 /* JSONModelError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelError.h; sourceTree = "<group>"; };
+		5E307F461F6EE3EE000CD620 /* JSONModelError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONModelError.m; sourceTree = "<group>"; };
+		5E307F471F6EE3EE000CD620 /* JSONModel.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = JSONModel.modulemap; sourceTree = "<group>"; };
+		5E307F481F6EE3EE000CD620 /* JSONModelLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONModelLib.h; sourceTree = "<group>"; };
+		5E307F4A1F6EE3EE000CD620 /* JSONAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONAPI.h; sourceTree = "<group>"; };
+		5E307F4B1F6EE3EE000CD620 /* JSONAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONAPI.m; sourceTree = "<group>"; };
+		5E307F4C1F6EE3EE000CD620 /* JSONHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONHTTPClient.h; sourceTree = "<group>"; };
+		5E307F4D1F6EE3EE000CD620 /* JSONHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONHTTPClient.m; sourceTree = "<group>"; };
+		5E307F4E1F6EE3EE000CD620 /* JSONModel+networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JSONModel+networking.h"; sourceTree = "<group>"; };
+		5E307F4F1F6EE3EE000CD620 /* JSONModel+networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JSONModel+networking.m"; sourceTree = "<group>"; };
+		5E307F511F6EE3EE000CD620 /* JSONKeyMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKeyMapper.h; sourceTree = "<group>"; };
+		5E307F521F6EE3EE000CD620 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
+		5E307F531F6EE3EE000CD620 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
+		5E307F541F6EE3EE000CD620 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +175,7 @@
 				5E307EE51F6E9F01000CD620 /* Functions */,
 				5E307EA61F6E763E000CD620 /* Categories */,
 				5E307EC11F6E7A43000CD620 /* Classes */,
+				5E307F3E1F6EE3EE000CD620 /* JSONModel */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -189,6 +221,7 @@
 		5E307EB01F6E763E000CD620 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				5E307F221F6EDE76000CD620 /* SAPGameWorld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -308,6 +341,65 @@
 			path = SAPDispatch;
 			sourceTree = "<group>";
 		};
+		5E307F221F6EDE76000CD620 /* SAPGameWorld */ = {
+			isa = PBXGroup;
+			children = (
+				5E307F231F6EDE8E000CD620 /* SAPGameWorld.h */,
+				5E307F241F6EDE8E000CD620 /* SAPGameWorld.m */,
+			);
+			path = SAPGameWorld;
+			sourceTree = "<group>";
+		};
+		5E307F3E1F6EE3EE000CD620 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E307F3F1F6EE3EE000CD620 /* Info.plist */,
+				5E307F401F6EE3EE000CD620 /* JSONModel */,
+				5E307F471F6EE3EE000CD620 /* JSONModel.modulemap */,
+				5E307F481F6EE3EE000CD620 /* JSONModelLib.h */,
+				5E307F491F6EE3EE000CD620 /* JSONModelNetworking */,
+				5E307F501F6EE3EE000CD620 /* JSONModelTransformations */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		5E307F401F6EE3EE000CD620 /* JSONModel */ = {
+			isa = PBXGroup;
+			children = (
+				5E307F411F6EE3EE000CD620 /* JSONModel.h */,
+				5E307F421F6EE3EE000CD620 /* JSONModel.m */,
+				5E307F431F6EE3EE000CD620 /* JSONModelClassProperty.h */,
+				5E307F441F6EE3EE000CD620 /* JSONModelClassProperty.m */,
+				5E307F451F6EE3EE000CD620 /* JSONModelError.h */,
+				5E307F461F6EE3EE000CD620 /* JSONModelError.m */,
+			);
+			path = JSONModel;
+			sourceTree = "<group>";
+		};
+		5E307F491F6EE3EE000CD620 /* JSONModelNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				5E307F4A1F6EE3EE000CD620 /* JSONAPI.h */,
+				5E307F4B1F6EE3EE000CD620 /* JSONAPI.m */,
+				5E307F4C1F6EE3EE000CD620 /* JSONHTTPClient.h */,
+				5E307F4D1F6EE3EE000CD620 /* JSONHTTPClient.m */,
+				5E307F4E1F6EE3EE000CD620 /* JSONModel+networking.h */,
+				5E307F4F1F6EE3EE000CD620 /* JSONModel+networking.m */,
+			);
+			path = JSONModelNetworking;
+			sourceTree = "<group>";
+		};
+		5E307F501F6EE3EE000CD620 /* JSONModelTransformations */ = {
+			isa = PBXGroup;
+			children = (
+				5E307F511F6EE3EE000CD620 /* JSONKeyMapper.h */,
+				5E307F521F6EE3EE000CD620 /* JSONKeyMapper.m */,
+				5E307F531F6EE3EE000CD620 /* JSONValueTransformer.h */,
+				5E307F541F6EE3EE000CD620 /* JSONValueTransformer.m */,
+			);
+			path = JSONModelTransformations;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E307F551F6EE3EE000CD620 /* Info.plist in Resources */,
 				5E307EB21F6E763E000CD620 /* Assets.xcassets in Resources */,
 				5E307EC01F6E7868000CD620 /* SAPLoginViewController.xib in Resources */,
 				5E307E9A1F6E7258000CD620 /* LaunchScreen.storyboard in Resources */,
@@ -383,17 +476,26 @@
 			files = (
 				5E307E8F1F6E7258000CD620 /* AppDelegate.m in Sources */,
 				5E307EB31F6E763E000CD620 /* UINib+SAPExtensions.m in Sources */,
+				5E307F591F6EE3EE000CD620 /* JSONAPI.m in Sources */,
 				5E307EB41F6E763E000CD620 /* UITableView+SAPExtensions.m in Sources */,
 				5E307EC51F6E7A43000CD620 /* SAPTableViewCell.m in Sources */,
 				5E307EBF1F6E7868000CD620 /* SAPLoginViewController.m in Sources */,
 				5E307EE41F6E9AD7000CD620 /* SAPDataTaskContext.m in Sources */,
+				5E307F5B1F6EE3EE000CD620 /* JSONModel+networking.m in Sources */,
 				5E307ECE1F6E8A2C000CD620 /* UIView+IBDesignable.m in Sources */,
 				5E307EB51F6E763E000CD620 /* UIWindow+SAPExtensions.m in Sources */,
 				5E307EE91F6E9F01000CD620 /* SAPDispatch.m in Sources */,
+				5E307F581F6EE3EE000CD620 /* JSONModelError.m in Sources */,
+				5E307F5A1F6EE3EE000CD620 /* JSONHTTPClient.m in Sources */,
+				5E307F571F6EE3EE000CD620 /* JSONModelClassProperty.m in Sources */,
+				5E307F561F6EE3EE000CD620 /* JSONModel.m in Sources */,
 				5E307EE01F6E922F000CD620 /* SAPNetworkContext.m in Sources */,
 				5E307E8C1F6E7258000CD620 /* main.m in Sources */,
+				5E307F5D1F6EE3EE000CD620 /* JSONValueTransformer.m in Sources */,
 				5E307ED71F6E8D82000CD620 /* SAPLoginContext.m in Sources */,
+				5E307F5C1F6EE3EE000CD620 /* JSONKeyMapper.m in Sources */,
 				5E307EDB1F6E8DE7000CD620 /* SAPNetworkManager.m in Sources */,
+				5E307F251F6EDE8E000CD620 /* SAPGameWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

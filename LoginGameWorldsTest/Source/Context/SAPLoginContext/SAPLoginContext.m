@@ -9,6 +9,7 @@
 @import UIKit.UIDevice;
 
 #import "SAPLoginContext.h"
+#import "SAPGameWorld.h"
 
 static NSString * const kSAPLoginKey = @"login";
 static NSString * const kSAPPasswordKey = @"password";
@@ -67,7 +68,16 @@ static NSString * const kSAPDeviceIdKey = @"deviceId";
 }
 
 - (void)handleResponseData:(NSData *)data {
+    NSPropertyListFormat format;
+    NSError *error;
+    NSDictionary *plist = [NSPropertyListSerialization propertyListWithData:data options:0 format:&format error:&error];
+    NSArray *worlds = plist[@"allAvailableWorlds"];
+    
     NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]);
+    
+    NSError *error1;
+    SAPGameWorld *gameWorld = [[SAPGameWorld alloc] initWithDictionary:worlds[0] error:&error1];
+    int a = 1;
 }
 
 - (void)handleConnectionError:(NSError *)error {
