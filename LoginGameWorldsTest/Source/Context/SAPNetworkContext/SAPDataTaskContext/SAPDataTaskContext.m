@@ -33,7 +33,7 @@
 
 - (void)execute {
     NSMutableURLRequest *request = [self request];
-    [request setValue:@"text/xml" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     NSData *body = [self requestDictionaryData];
     [request setHTTPBody:body];
 //    showNetworkActivityIndicatorIOS()
@@ -73,7 +73,20 @@
 #pragma mark Private
 
 - (NSData *)requestDictionaryData {
-    return [NSKeyedArchiver archivedDataWithRootObject:[self requestDictionary]];
+    NSMutableArray *parameterArray = [NSMutableArray array];
+    
+    [[self requestDictionary] enumerateKeysAndObjectsUsingBlock:^(NSString *key, NSString *obj, BOOL *stop) {
+        NSString *param = [NSString stringWithFormat:@"%@=%@", [self percentEscapeString:key], [self percentEscapeString:obj]];
+        [parameterArray addObject:param];
+    }];
+    
+    NSString *string = [parameterArray componentsJoinedByString:@"&"];
+    
+    return [string dataUsingEncoding:NSUTF8StringEncoding];
+}
+
+- (NSString *)percentEscapeString:(NSString *)string {
+    return [string stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 }
 
 @end
