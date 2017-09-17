@@ -47,7 +47,7 @@ static NSTimeInterval const kPBRequestTimeout = 120;
     return [[SAPNetworkManager sharedInstance] ephemeralSession];
 }
 
-- (NSURLRequest *)request {
+- (NSMutableURLRequest *)request {
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[self url]];
     request.timeoutInterval = [self requestTimeout];
     request.HTTPMethod = [self httpMethodDescription:[self httpMethod]];
@@ -57,6 +57,10 @@ static NSTimeInterval const kPBRequestTimeout = 120;
 
 - (NSTimeInterval)requestTimeout {
     return kPBRequestTimeout;
+}
+
+- (void)handleConnectionError:(NSError *)error {
+    NSLog(@"%@", error.localizedDescription);
 }
 
 #pragma mark -

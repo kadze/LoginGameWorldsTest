@@ -22,9 +22,11 @@ typedef enum : NSUInteger {
 
 - (NSString *)urlStringForRequest; //empty string by default
 - (NSURL *)url;
+- (NSDictionary *)requestDictionary;
 - (SAPHTTPMethod)httpMethod;
 - (NSURLSession *)urlSession;
-- (NSURLRequest *)request;
+- (NSMutableURLRequest *)request;
 - (NSTimeInterval)requestTimeout;
+- (void)handleConnectionError:(NSError *)error;
 
 @end

@@ -1,14 +1,13 @@
 //
-//  SAPLoginContext.h
+//  SAPDataTaskContext.h
 //  LoginGameWorldsTest
 //
 //  Created by ASH on 9/17/17.
 //  Copyright © 2017 SAP. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "SAPNetworkContext.h"
 
-
-@interface SAPLoginContext : NSObject
+@interface SAPDataTaskContext : SAPNetworkContext
 
 @end

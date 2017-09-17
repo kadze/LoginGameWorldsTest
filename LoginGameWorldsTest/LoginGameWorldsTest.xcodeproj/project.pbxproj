@@ -21,6 +21,8 @@
 		5E307ED71F6E8D82000CD620 /* SAPLoginContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307ED61F6E8D82000CD620 /* SAPLoginContext.m */; };
 		5E307EDB1F6E8DE7000CD620 /* SAPNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EDA1F6E8DE7000CD620 /* SAPNetworkManager.m */; };
 		5E307EE01F6E922F000CD620 /* SAPNetworkContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EDF1F6E922F000CD620 /* SAPNetworkContext.m */; };
+		5E307EE41F6E9AD7000CD620 /* SAPDataTaskContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EE31F6E9AD7000CD620 /* SAPDataTaskContext.m */; };
+		5E307EE91F6E9F01000CD620 /* SAPDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EE81F6E9F01000CD620 /* SAPDispatch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,10 @@
 		5E307EDC1F6E91F2000CD620 /* SAPContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPContext.h; sourceTree = "<group>"; };
 		5E307EDE1F6E922F000CD620 /* SAPNetworkContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPNetworkContext.h; sourceTree = "<group>"; };
 		5E307EDF1F6E922F000CD620 /* SAPNetworkContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPNetworkContext.m; sourceTree = "<group>"; };
+		5E307EE21F6E9AD7000CD620 /* SAPDataTaskContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPDataTaskContext.h; sourceTree = "<group>"; };
+		5E307EE31F6E9AD7000CD620 /* SAPDataTaskContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPDataTaskContext.m; sourceTree = "<group>"; };
+		5E307EE71F6E9F01000CD620 /* SAPDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPDispatch.h; sourceTree = "<group>"; };
+		5E307EE81F6E9F01000CD620 /* SAPDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPDispatch.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +141,7 @@
 		5E307EA51F6E763E000CD620 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				5E307EE51F6E9F01000CD620 /* Functions */,
 				5E307EA61F6E763E000CD620 /* Categories */,
 				5E307EC11F6E7A43000CD620 /* Classes */,
 			);
@@ -270,8 +277,35 @@
 			children = (
 				5E307EDE1F6E922F000CD620 /* SAPNetworkContext.h */,
 				5E307EDF1F6E922F000CD620 /* SAPNetworkContext.m */,
+				5E307EE11F6E9AC0000CD620 /* SAPDataTaskContext */,
 			);
 			path = SAPNetworkContext;
+			sourceTree = "<group>";
+		};
+		5E307EE11F6E9AC0000CD620 /* SAPDataTaskContext */ = {
+			isa = PBXGroup;
+			children = (
+				5E307EE21F6E9AD7000CD620 /* SAPDataTaskContext.h */,
+				5E307EE31F6E9AD7000CD620 /* SAPDataTaskContext.m */,
+			);
+			path = SAPDataTaskContext;
+			sourceTree = "<group>";
+		};
+		5E307EE51F6E9F01000CD620 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				5E307EE61F6E9F01000CD620 /* SAPDispatch */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		5E307EE61F6E9F01000CD620 /* SAPDispatch */ = {
+			isa = PBXGroup;
+			children = (
+				5E307EE71F6E9F01000CD620 /* SAPDispatch.h */,
+				5E307EE81F6E9F01000CD620 /* SAPDispatch.m */,
+			);
+			path = SAPDispatch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,8 +386,10 @@
 				5E307EB41F6E763E000CD620 /* UITableView+SAPExtensions.m in Sources */,
 				5E307EC51F6E7A43000CD620 /* SAPTableViewCell.m in Sources */,
 				5E307EBF1F6E7868000CD620 /* SAPLoginViewController.m in Sources */,
+				5E307EE41F6E9AD7000CD620 /* SAPDataTaskContext.m in Sources */,
 				5E307ECE1F6E8A2C000CD620 /* UIView+IBDesignable.m in Sources */,
 				5E307EB51F6E763E000CD620 /* UIWindow+SAPExtensions.m in Sources */,
+				5E307EE91F6E9F01000CD620 /* SAPDispatch.m in Sources */,
 				5E307EE01F6E922F000CD620 /* SAPNetworkContext.m in Sources */,
 				5E307E8C1F6E7258000CD620 /* main.m in Sources */,
 				5E307ED71F6E8D82000CD620 /* SAPLoginContext.m in Sources */,
