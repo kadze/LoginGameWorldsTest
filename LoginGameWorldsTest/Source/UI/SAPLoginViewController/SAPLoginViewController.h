@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface SAPLoginViewController : UIViewController
+
+@property (nonatomic, weak) IBOutlet UITextField *emailTextField;
+@property (nonatomic, weak) IBOutlet UITextField *passwordTextField;
     
 @end

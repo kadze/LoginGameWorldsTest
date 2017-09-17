@@ -8,15 +8,37 @@
 
 #import "SAPLoginViewController.h"
 
-@interface SAPLoginViewController ()
+@interface SAPLoginViewController () <UITextFieldDelegate>
 
 @end
 
 @implementation SAPLoginViewController
 
+#pragma mark -
+#pragma mark View Lifecycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+#pragma mark -
+#pragma mark UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == self.emailTextField) {
+        [self.passwordTextField becomeFirstResponder];
+    } else if (textField == self.passwordTextField) {
+        [self login];
+    }
     
+    return YES;
+}
+
+#pragma mark -
+#pragma mark UITextFieldDelegate
+
+- (void)login {
+    NSLog(@"login");
 }
 
 @end
