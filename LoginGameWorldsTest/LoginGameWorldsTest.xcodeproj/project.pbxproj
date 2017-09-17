@@ -33,6 +33,7 @@
 		5E307F5B1F6EE3EE000CD620 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F4F1F6EE3EE000CD620 /* JSONModel+networking.m */; };
 		5E307F5C1F6EE3EE000CD620 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F521F6EE3EE000CD620 /* JSONKeyMapper.m */; };
 		5E307F5D1F6EE3EE000CD620 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F541F6EE3EE000CD620 /* JSONValueTransformer.m */; };
+		5E435F5F1F6EFC91000DEB70 /* SAPWorldStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E435F5E1F6EFC91000DEB70 /* SAPWorldStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,8 @@
 		5E307F521F6EE3EE000CD620 /* JSONKeyMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKeyMapper.m; sourceTree = "<group>"; };
 		5E307F531F6EE3EE000CD620 /* JSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONValueTransformer.h; sourceTree = "<group>"; };
 		5E307F541F6EE3EE000CD620 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
+		5E435F5D1F6EFC91000DEB70 /* SAPWorldStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPWorldStatus.h; sourceTree = "<group>"; };
+		5E435F5E1F6EFC91000DEB70 /* SAPWorldStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPWorldStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				5E307F221F6EDE76000CD620 /* SAPGameWorld */,
+				5E435F5C1F6EFC6F000DEB70 /* SAPWorldStatus */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -400,6 +404,15 @@
 			path = JSONModelTransformations;
 			sourceTree = "<group>";
 		};
+		5E435F5C1F6EFC6F000DEB70 /* SAPWorldStatus */ = {
+			isa = PBXGroup;
+			children = (
+				5E435F5D1F6EFC91000DEB70 /* SAPWorldStatus.h */,
+				5E435F5E1F6EFC91000DEB70 /* SAPWorldStatus.m */,
+			);
+			path = SAPWorldStatus;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -476,6 +489,7 @@
 			files = (
 				5E307E8F1F6E7258000CD620 /* AppDelegate.m in Sources */,
 				5E307EB31F6E763E000CD620 /* UINib+SAPExtensions.m in Sources */,
+				5E435F5F1F6EFC91000DEB70 /* SAPWorldStatus.m in Sources */,
 				5E307F591F6EE3EE000CD620 /* JSONAPI.m in Sources */,
 				5E307EB41F6E763E000CD620 /* UITableView+SAPExtensions.m in Sources */,
 				5E307EC51F6E7A43000CD620 /* SAPTableViewCell.m in Sources */,

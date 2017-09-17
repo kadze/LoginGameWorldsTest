@@ -10,4 +10,8 @@
 
 @implementation SAPGameWorld
 
++ (JSONKeyMapper *)keyMapper {
+    return [[JSONKeyMapper alloc] initWithModelToJSONDictionary:@{@"worldID": @"id"}];
+}
+
 @end

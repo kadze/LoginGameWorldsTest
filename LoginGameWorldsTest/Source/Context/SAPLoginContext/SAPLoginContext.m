@@ -15,7 +15,7 @@ static NSString * const kSAPLoginKey = @"login";
 static NSString * const kSAPPasswordKey = @"password";
 static NSString * const kSAPDeviceTypeKey = @"deviceType";
 static NSString * const kSAPDeviceIdKey = @"deviceId";
-
+static NSString * const kSAPAvailableWorldsKey = @"allAvailableWorlds";
 
 @interface SAPLoginContext()
 @property (nonatomic, copy) NSString *login;
@@ -71,13 +71,21 @@ static NSString * const kSAPDeviceIdKey = @"deviceId";
     NSPropertyListFormat format;
     NSError *error;
     NSDictionary *plist = [NSPropertyListSerialization propertyListWithData:data options:0 format:&format error:&error];
-    NSArray *worlds = plist[@"allAvailableWorlds"];
+    NSArray *worldsInfo = plist[kSAPAvailableWorldsKey];
+    NSMutableArray *worlds = [NSMutableArray new];
+    for (NSDictionary *worldInfo in worldsInfo) {
+        NSError *error1 = nil;
+        SAPGameWorld *gameWorld = [[SAPGameWorld alloc] initWithDictionary:worldInfo error:&error1];
+        if (error) {
+            NSLog(@"Could not load wold info %@", worldInfo);
+        }
+        
+        if (gameWorld) {
+            [worlds addObject:gameWorld];
+        }
+    }
     
-    NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]);
-    
-    NSError *error1;
-    SAPGameWorld *gameWorld = [[SAPGameWorld alloc] initWithDictionary:worlds[0] error:&error1];
-    int a = 1;
+    [self.delegate loginSuccessfulWithWorlds:worlds];
 }
 
 - (void)handleConnectionError:(NSError *)error {
