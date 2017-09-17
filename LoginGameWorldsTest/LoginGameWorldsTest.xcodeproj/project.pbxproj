@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E307E8C1F6E7258000CD620 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307E8B1F6E7258000CD620 /* main.m */; };
+		5E307E8F1F6E7258000CD620 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307E8E1F6E7258000CD620 /* AppDelegate.m */; };
+		5E307E921F6E7258000CD620 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307E911F6E7258000CD620 /* ViewController.m */; };
+		5E307E951F6E7258000CD620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E307E931F6E7258000CD620 /* Main.storyboard */; };
+		5E307E971F6E7258000CD620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E307E961F6E7258000CD620 /* Assets.xcassets */; };
+		5E307E9A1F6E7258000CD620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E307E981F6E7258000CD620 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5E307E871F6E7258000CD620 /* LoginGameWorldsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginGameWorldsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E307E8B1F6E7258000CD620 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5E307E8D1F6E7258000CD620 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5E307E8E1F6E7258000CD620 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5E307E901F6E7258000CD620 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5E307E911F6E7258000CD620 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5E307E941F6E7258000CD620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E307E961F6E7258000CD620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5E307E991F6E7258000CD620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5E307E9B1F6E7258000CD620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5E307E841F6E7258000CD620 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5E307E7E1F6E7258000CD620 = {
+			isa = PBXGroup;
+			children = (
+				5E307E891F6E7258000CD620 /* LoginGameWorldsTest */,
+				5E307E881F6E7258000CD620 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5E307E881F6E7258000CD620 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E307E871F6E7258000CD620 /* LoginGameWorldsTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E307E891F6E7258000CD620 /* LoginGameWorldsTest */ = {
+			isa = PBXGroup;
+			children = (
+				5E307E8D1F6E7258000CD620 /* AppDelegate.h */,
+				5E307E8E1F6E7258000CD620 /* AppDelegate.m */,
+				5E307E901F6E7258000CD620 /* ViewController.h */,
+				5E307E911F6E7258000CD620 /* ViewController.m */,
+				5E307E931F6E7258000CD620 /* Main.storyboard */,
+				5E307E961F6E7258000CD620 /* Assets.xcassets */,
+				5E307E981F6E7258000CD620 /* LaunchScreen.storyboard */,
+				5E307E9B1F6E7258000CD620 /* Info.plist */,
+				5E307E8A1F6E7258000CD620 /* Supporting Files */,
+			);
+			path = LoginGameWorldsTest;
+			sourceTree = "<group>";
+		};
+		5E307E8A1F6E7258000CD620 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E307E8B1F6E7258000CD620 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E307E861F6E7258000CD620 /* LoginGameWorldsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E307E9E1F6E7258000CD620 /* Build configuration list for PBXNativeTarget "LoginGameWorldsTest" */;
+			buildPhases = (
+				5E307E831F6E7258000CD620 /* Sources */,
+				5E307E841F6E7258000CD620 /* Frameworks */,
+				5E307E851F6E7258000CD620 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginGameWorldsTest;
+			productName = LoginGameWorldsTest;
+			productReference = 5E307E871F6E7258000CD620 /* LoginGameWorldsTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5E307E7F1F6E7258000CD620 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = SAP;
+				TargetAttributes = {
+					5E307E861F6E7258000CD620 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 82RN25AVX5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5E307E821F6E7258000CD620 /* Build configuration list for PBXProject "LoginGameWorldsTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5E307E7E1F6E7258000CD620;
+			productRefGroup = 5E307E881F6E7258000CD620 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E307E861F6E7258000CD620 /* LoginGameWorldsTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5E307E851F6E7258000CD620 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E307E9A1F6E7258000CD620 /* LaunchScreen.storyboard in Resources */,
+				5E307E971F6E7258000CD620 /* Assets.xcassets in Resources */,
+				5E307E951F6E7258000CD620 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5E307E831F6E7258000CD620 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E307E921F6E7258000CD620 /* ViewController.m in Sources */,
+				5E307E8F1F6E7258000CD620 /* AppDelegate.m in Sources */,
+				5E307E8C1F6E7258000CD620 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5E307E931F6E7258000CD620 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E307E941F6E7258000CD620 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5E307E981F6E7258000CD620 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5E307E991F6E7258000CD620 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5E307E9C1F6E7258000CD620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5E307E9D1F6E7258000CD620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E307E9F1F6E7258000CD620 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 82RN25AVX5;
+				INFOPLIST_FILE = LoginGameWorldsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SAP.LoginGameWorldsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5E307EA01F6E7258000CD620 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 82RN25AVX5;
+				INFOPLIST_FILE = LoginGameWorldsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SAP.LoginGameWorldsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5E307E821F6E7258000CD620 /* Build configuration list for PBXProject "LoginGameWorldsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E307E9C1F6E7258000CD620 /* Debug */,
+				5E307E9D1F6E7258000CD620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E307E9E1F6E7258000CD620 /* Build configuration list for PBXNativeTarget "LoginGameWorldsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E307E9F1F6E7258000CD620 /* Debug */,
+				5E307EA01F6E7258000CD620 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5E307E7F1F6E7258000CD620 /* Project object */;
+}
