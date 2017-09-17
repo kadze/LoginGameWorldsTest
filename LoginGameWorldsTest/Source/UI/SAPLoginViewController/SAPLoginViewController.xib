@@ -68,9 +68,20 @@
                         </button>
                     </subviews>
                 </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBy-Ka-HSr">
+                    <rect key="frame" x="112.5" y="579" width="150" height="33"/>
+                    <color key="backgroundColor" red="0.77652478218078613" green="0.77735954523086548" blue="0.72729986906051636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Fill Test Credentials"/>
+                    <connections>
+                        <action selector="onFillTestCredentialsButton:" destination="-1" eventType="touchUpInside" id="SvV-Cb-EVG"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="cBy-Ka-HSr" secondAttribute="bottom" constant="55" id="34d-ac-a68"/>
+                <constraint firstItem="cBy-Ka-HSr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UKp-Cm-AY4"/>
                 <constraint firstItem="uPm-9f-OrR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bxH-Qv-thn"/>
                 <constraint firstItem="uPm-9f-OrR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2:3" id="f4e-Zl-d7k"/>
                 <constraint firstItem="uPm-9f-OrR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="vJR-Uh-yCi"/>

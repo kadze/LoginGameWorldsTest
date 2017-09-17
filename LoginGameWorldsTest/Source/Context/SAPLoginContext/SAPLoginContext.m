@@ -67,7 +67,7 @@ static NSString * const kSAPDeviceIdKey = @"deviceId";
 }
 
 - (void)handleResponseData:(NSData *)data {
-    
+    NSLog(@"%@", [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding]);
 }
 
 - (void)handleConnectionError:(NSError *)error {

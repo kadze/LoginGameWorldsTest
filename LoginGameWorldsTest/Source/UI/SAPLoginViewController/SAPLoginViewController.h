@@ -14,5 +14,6 @@
 @property (nonatomic, weak) IBOutlet UITextField *passwordTextField;
 
 - (IBAction)onLoginButton:(UIButton *)sender;
+- (IBAction)onFillTestCredentialsButton:(UIButton *)sender;
 
 @end

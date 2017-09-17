@@ -67,6 +67,11 @@
     [self login];
 }
 
+- (IBAction)onFillTestCredentialsButton:(UIButton *)sender {
+    self.emailTextField.text = @"ios.test@xyrality.com";
+    self.passwordTextField.text = @"password";
+}
+
 #pragma mark -
 #pragma mark Private
 
