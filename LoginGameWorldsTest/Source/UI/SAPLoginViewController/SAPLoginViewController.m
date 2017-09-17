@@ -71,7 +71,7 @@
 #pragma mark Private
 
 - (void)login {
-    self.loginContext = [SAPLoginContext contextWithEmail:self.emailTextField.text
+    self.loginContext = [SAPLoginContext contextWithLogin:self.emailTextField.text
                                                  password:self.passwordTextField.text
                                                  delegate:self];
 }

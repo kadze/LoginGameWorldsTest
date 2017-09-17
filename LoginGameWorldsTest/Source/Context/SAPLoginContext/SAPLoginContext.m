@@ -6,10 +6,18 @@
 //  Copyright © 2017 SAP. All rights reserved.
 //
 
+@import UIKit.UIDevice;
+
 #import "SAPLoginContext.h"
 
+static NSString * const kSAPLoginKey = @"login";
+static NSString * const kSAPPasswordKey = @"password";
+static NSString * const kSAPDeviceTypeKey = @"deviceType";
+static NSString * const kSAPDeviceIdKey = @"deviceId";
+
+
 @interface SAPLoginContext()
-@property (nonatomic, copy) NSString *email;
+@property (nonatomic, copy) NSString *login;
 @property (nonatomic, copy) NSString *password;
 
 @property (nonatomic, weak) id<SAPLoginContextDelegate> delegate;
@@ -21,16 +29,16 @@
 #pragma mark -
 #pragma mark Class Methods
 
-+ (instancetype)contextWithEmail:(NSString *)email password:(NSString *)password delegate:(id<SAPLoginContextDelegate>)delegate {
-    return [[self alloc] initWithEmail:email password:password delegate:delegate];
++ (instancetype)contextWithLogin:(NSString *)login password:(NSString *)password delegate:(id<SAPLoginContextDelegate>)delegate {
+    return [[self alloc] initWithLogin:login password:password delegate:delegate];
 }
 
 #pragma mark -
 #pragma mark Initializations and Deallocations
 
-- (instancetype)initWithEmail:(NSString *)email password:(NSString *)password delegate:(id<SAPLoginContextDelegate>)delegate {
+- (instancetype)initWithLogin:(NSString *)login password:(NSString *)password delegate:(id<SAPLoginContextDelegate>)delegate {
     self = [super init];
-    self.email = email;
+    self.login = login;
     self.password = password;
     self.delegate = delegate;
     
@@ -41,11 +49,21 @@
 #pragma mark Public
 
 - (NSString *)urlStringForRequest {
-    return @"";
+    return @"https://backend1.lordsandknights.com/XYRALITY/WebObjects/BKLoginServer.woa/wa/worlds";
 }
 
 - (NSDictionary *)requestDictionary {
-    return @{@"":@""};
+    if (!self.login || !self.password) {
+        return @{@"":@""};
+    }
+    
+    UIDevice *device = UIDevice.currentDevice;
+    NSString *deviceType = [NSString stringWithFormat:@"%@ - %@ %@", device.model, device.systemName, device.systemVersion];
+    
+    return @{kSAPLoginKey : self.login,
+             kSAPPasswordKey : self.password,
+             kSAPDeviceIdKey : NSUUID.UUID.UUIDString,
+             kSAPDeviceTypeKey : deviceType};
 }
 
 - (void)handleResponseData:(NSData *)data {

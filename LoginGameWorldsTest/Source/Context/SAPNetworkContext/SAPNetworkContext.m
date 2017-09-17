@@ -10,7 +10,7 @@
 
 #import "SAPNetworkManager.h"
 
-static NSTimeInterval const kPBRequestTimeout = 120;
+static NSTimeInterval const kSAPRequestTimeout = 120;
 
 @implementation SAPNetworkContext
 
@@ -56,7 +56,7 @@ static NSTimeInterval const kPBRequestTimeout = 120;
 }
 
 - (NSTimeInterval)requestTimeout {
-    return kPBRequestTimeout;
+    return kSAPRequestTimeout;
 }
 
 - (void)handleConnectionError:(NSError *)error {

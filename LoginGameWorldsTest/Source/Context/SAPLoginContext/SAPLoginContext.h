@@ -18,6 +18,6 @@
 @end
 
 @interface SAPLoginContext : SAPDataTaskContext
-+ (instancetype)contextWithEmail:(NSString *)email password:(NSString *)password delegate:(id<SAPLoginContextDelegate>)delegate;
++ (instancetype)contextWithLogin:(NSString *)login password:(NSString *)password delegate:(id<SAPLoginContextDelegate>)delegate;
 
 @end
