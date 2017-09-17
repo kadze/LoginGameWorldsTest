@@ -14,6 +14,9 @@
 		5E307EB31F6E763E000CD620 /* UINib+SAPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EA91F6E763E000CD620 /* UINib+SAPExtensions.m */; };
 		5E307EB41F6E763E000CD620 /* UITableView+SAPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EAC1F6E763E000CD620 /* UITableView+SAPExtensions.m */; };
 		5E307EB51F6E763E000CD620 /* UIWindow+SAPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EAF1F6E763E000CD620 /* UIWindow+SAPExtensions.m */; };
+		5E307EBF1F6E7868000CD620 /* SAPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EBD1F6E7868000CD620 /* SAPLoginViewController.m */; };
+		5E307EC01F6E7868000CD620 /* SAPLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E307EBE1F6E7868000CD620 /* SAPLoginViewController.xib */; };
+		5E307EC51F6E7A43000CD620 /* SAPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307EC41F6E7A43000CD620 /* SAPTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,11 @@
 		5E307EAC1F6E763E000CD620 /* UITableView+SAPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SAPExtensions.m"; sourceTree = "<group>"; };
 		5E307EAE1F6E763E000CD620 /* UIWindow+SAPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+SAPExtensions.h"; sourceTree = "<group>"; };
 		5E307EAF1F6E763E000CD620 /* UIWindow+SAPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+SAPExtensions.m"; sourceTree = "<group>"; };
+		5E307EBC1F6E7868000CD620 /* SAPLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPLoginViewController.h; sourceTree = "<group>"; };
+		5E307EBD1F6E7868000CD620 /* SAPLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPLoginViewController.m; sourceTree = "<group>"; };
+		5E307EBE1F6E7868000CD620 /* SAPLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPLoginViewController.xib; sourceTree = "<group>"; };
+		5E307EC31F6E7A43000CD620 /* SAPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPTableViewCell.h; sourceTree = "<group>"; };
+		5E307EC41F6E7A43000CD620 /* SAPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				5E307EA61F6E763E000CD620 /* Categories */,
+				5E307EC11F6E7A43000CD620 /* Classes */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -162,8 +171,36 @@
 		5E307EB11F6E763E000CD620 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				5E307EBB1F6E784C000CD620 /* SAPLoginViewController */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		5E307EBB1F6E784C000CD620 /* SAPLoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5E307EBC1F6E7868000CD620 /* SAPLoginViewController.h */,
+				5E307EBD1F6E7868000CD620 /* SAPLoginViewController.m */,
+				5E307EBE1F6E7868000CD620 /* SAPLoginViewController.xib */,
+			);
+			path = SAPLoginViewController;
+			sourceTree = "<group>";
+		};
+		5E307EC11F6E7A43000CD620 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5E307EC21F6E7A43000CD620 /* SAPTableViewCell */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5E307EC21F6E7A43000CD620 /* SAPTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E307EC31F6E7A43000CD620 /* SAPTableViewCell.h */,
+				5E307EC41F6E7A43000CD620 /* SAPTableViewCell.m */,
+			);
+			path = SAPTableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +229,7 @@
 		5E307E7F1F6E7258000CD620 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SAP;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = SAP;
 				TargetAttributes = {
@@ -226,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E307EB21F6E763E000CD620 /* Assets.xcassets in Resources */,
+				5E307EC01F6E7868000CD620 /* SAPLoginViewController.xib in Resources */,
 				5E307E9A1F6E7258000CD620 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +279,8 @@
 				5E307E8F1F6E7258000CD620 /* AppDelegate.m in Sources */,
 				5E307EB31F6E763E000CD620 /* UINib+SAPExtensions.m in Sources */,
 				5E307EB41F6E763E000CD620 /* UITableView+SAPExtensions.m in Sources */,
+				5E307EC51F6E7A43000CD620 /* SAPTableViewCell.m in Sources */,
+				5E307EBF1F6E7868000CD620 /* SAPLoginViewController.m in Sources */,
 				5E307EB51F6E763E000CD620 /* UIWindow+SAPExtensions.m in Sources */,
 				5E307E8C1F6E7258000CD620 /* main.m in Sources */,
 			);
@@ -394,6 +435,7 @@
 				5E307EA01F6E7258000CD620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

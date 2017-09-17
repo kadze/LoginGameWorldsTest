@@ -6,7 +6,7 @@
 //  Copyright © 2016 SAP. All rights reserved.
 //
 
-#import "UINib+SAPextensions.h"
+#import "UINib+SAPExtensions.h"
 
 @implementation UINib (SAPextensions)
 

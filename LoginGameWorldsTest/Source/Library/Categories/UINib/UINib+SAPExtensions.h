@@ -8,7 +8,7 @@
 
 #import <UIKit/UINib.h>
 
-@interface UINib (SAPextensions)
+@interface UINib (SAPExtensions)
 
 + (UINib *)nibWithClass:(Class)aClass;
 + (UINib *)nibWithClass:(Class)aClass bundle:(NSBundle *)bundle;
