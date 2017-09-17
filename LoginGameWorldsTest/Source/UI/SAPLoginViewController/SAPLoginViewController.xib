@@ -62,6 +62,9 @@
                                     <real key="value" value="1"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onLoginButton:" destination="-1" eventType="touchUpInside" id="dOJ-pX-C4V"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>

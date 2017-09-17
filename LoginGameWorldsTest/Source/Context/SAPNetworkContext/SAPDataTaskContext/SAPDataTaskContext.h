@@ -10,4 +10,7 @@
 
 @interface SAPDataTaskContext : SAPNetworkContext
 
+- (void)cancel;
+- (void)handleResponseData:(NSData *)data;
+
 @end

@@ -8,11 +8,26 @@
 
 #import "SAPLoginViewController.h"
 
-@interface SAPLoginViewController () <UITextFieldDelegate>
+#import "SAPLoginContext.h"
+
+@interface SAPLoginViewController () <UITextFieldDelegate, SAPLoginContextDelegate>
+@property (nonatomic, strong) SAPLoginContext *loginContext;
 
 @end
 
 @implementation SAPLoginViewController
+
+#pragma mark -
+#pragma mark Accessors
+
+- (void)setLoginContext:(SAPLoginContext *)loginContext {
+    if (_loginContext) {
+        [_loginContext cancel];
+    }
+    
+    _loginContext = loginContext;
+    [loginContext execute];
+}
 
 #pragma mark -
 #pragma mark View Lifecycle
@@ -35,10 +50,31 @@
 }
 
 #pragma mark -
-#pragma mark UITextFieldDelegate
+#pragma mark SAPLoginContextDelegate
+
+- (void)loginSuccessfulWithWorlds:(NSArray *)worlds {
+    NSLog(@"%@", worlds);
+}
+
+- (void)loginFailedWithError:(NSError *)error {
+    
+}
+
+#pragma mark -
+#pragma mark Actions 
+
+- (IBAction)onLoginButton:(UIButton *)sender {
+    [self login];
+}
+
+#pragma mark -
+#pragma mark Private
 
 - (void)login {
-    NSLog(@"login");
+    self.loginContext = [SAPLoginContext contextWithEmail:self.emailTextField.text
+                                                 password:self.passwordTextField.text
+                                                 delegate:self];
 }
+
 
 @end

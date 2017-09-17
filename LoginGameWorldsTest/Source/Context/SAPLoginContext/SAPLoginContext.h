@@ -8,7 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SAPDataTaskContext.h"
 
-@interface SAPLoginContext : NSObject
+@protocol SAPLoginContextDelegate <NSObject>
+
+- (void)loginSuccessfulWithWorlds:(NSArray *)worlds;
+- (void)loginFailedWithError:(NSError *)error;
+
+@end
+
+@interface SAPLoginContext : SAPDataTaskContext
++ (instancetype)contextWithEmail:(NSString *)email password:(NSString *)password delegate:(id<SAPLoginContextDelegate>)delegate;
 
 @end

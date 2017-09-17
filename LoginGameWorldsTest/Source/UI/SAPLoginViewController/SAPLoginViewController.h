@@ -12,5 +12,7 @@
 
 @property (nonatomic, weak) IBOutlet UITextField *emailTextField;
 @property (nonatomic, weak) IBOutlet UITextField *passwordTextField;
-    
+
+- (IBAction)onLoginButton:(UIButton *)sender;
+
 @end
