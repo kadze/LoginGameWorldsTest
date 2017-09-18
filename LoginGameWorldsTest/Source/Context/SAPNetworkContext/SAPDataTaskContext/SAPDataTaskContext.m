@@ -9,6 +9,7 @@
 #import "SAPDataTaskContext.h"
 
 #import "SAPDispatch.h"
+#import "SAPNetworkManager.h"
 
 @interface SAPDataTaskContext ()
 @property (nonatomic, strong) NSURLSessionDataTask *dataTask;
@@ -36,7 +37,10 @@
     [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     NSData *body = [self requestDictionaryData];
     [request setHTTPBody:body];
-//    showNetworkActivityIndicatorIOS()
+    
+    SAPNetworkManager *networkManager = [SAPNetworkManager sharedInstance];
+    [networkManager setNetworkActivityIndicatorVisible:YES];
+    
     self.dataTask = [[self urlSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error)
     {
         if (error) {
@@ -44,7 +48,7 @@
         }
         
         SAPDispatchAsyncOnMainQueue(^{
-//            self.hideNetworkActividyIndicatorIOS()
+            [networkManager setNetworkActivityIndicatorVisible:NO];
             if (data) {
                 [self handleResponseData:data];
             }
@@ -54,7 +58,7 @@
     if (self.dataTask) {
         [self.dataTask resume];
     } else {
-//        hideNetworkActividyIndicatorIOS()
+        [networkManager setNetworkActivityIndicatorVisible:NO];
     }
 }
 

@@ -16,4 +16,6 @@
 - (NSURLSession *)ephemeralSession;
 - (NSURLSession *)backgroundSession;
 
+- (void)setNetworkActivityIndicatorVisible:(BOOL)visible;
+
 @end

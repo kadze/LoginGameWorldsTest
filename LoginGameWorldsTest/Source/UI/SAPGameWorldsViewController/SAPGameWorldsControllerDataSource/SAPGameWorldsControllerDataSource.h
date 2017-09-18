@@ -11,8 +11,8 @@
 @class SAPGameWorld;
 
 @interface SAPGameWorldsControllerDataSource : NSObject <UITableViewDataSource>
-@property (nonatomic, strong) NSArray<SAPGameWorld *> *worlds;
-@property (nonatomic, weak) UITableView *tableView;
+@property (nonatomic, strong) NSArray<SAPGameWorld *>   *worlds;
+@property (nonatomic, weak) UITableView                 *tableView;
 
 + (instancetype)dataSourceWithWorlds:(NSArray<SAPGameWorld *> *)worlds tableView:(UITableView *)tableView;
 

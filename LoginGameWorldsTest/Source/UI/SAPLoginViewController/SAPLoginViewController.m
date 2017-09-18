@@ -17,6 +17,8 @@
 
 #import "SAPViewControllerMacro.h"
 
+static NSString * const kSAPLoginFailedTitle = @"Login failed";
+
 @interface SAPLoginViewController () <UITextFieldDelegate, SAPLoginContextDelegate>
 @property (nonatomic, strong) SAPLoginContext *loginContext;
 
@@ -70,7 +72,7 @@ SAPViewControllerBaseViewProperty(SAPLoginViewController, SAPLoginView, mainView
 
 - (void)loginFailedWithMessage:(NSString *)message {
     [self.mainView setLoadingViewVisible:NO animated:YES completion:^{
-        [UIAlertController presentAlertControllerWithTitle:@"Login failed" message:message];
+        [UIAlertController presentAlertControllerWithTitle:kSAPLoginFailedTitle message:message];
     }];
 }
 

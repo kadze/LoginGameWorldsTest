@@ -47,8 +47,4 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-#pragma mark -
-#pragma mark Private
-
-
 @end
