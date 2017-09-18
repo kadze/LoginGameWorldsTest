@@ -18,9 +18,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="world" translatesAutoresizingMaskIntoConstraints="NO" id="pSw-Lo-4FP">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="world" translatesAutoresizingMaskIntoConstraints="NO" id="pSw-Lo-4FP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BTY-d5-bbg">
@@ -44,7 +43,11 @@
                 <constraints>
                     <constraint firstItem="BTY-d5-bbg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9oP-Pc-fxd"/>
                     <constraint firstItem="BTY-d5-bbg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="MVi-T8-wD6"/>
+                    <constraint firstAttribute="bottom" secondItem="pSw-Lo-4FP" secondAttribute="bottom" id="Ml2-nI-WOa"/>
+                    <constraint firstItem="pSw-Lo-4FP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="asb-Um-L39"/>
+                    <constraint firstAttribute="trailing" secondItem="pSw-Lo-4FP" secondAttribute="trailing" id="oh7-iO-Cdx"/>
                     <constraint firstAttribute="bottom" secondItem="BTY-d5-bbg" secondAttribute="bottom" id="t3L-b1-Ayl"/>
+                    <constraint firstItem="pSw-Lo-4FP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uPa-JV-ahN"/>
                     <constraint firstAttribute="trailing" secondItem="BTY-d5-bbg" secondAttribute="trailing" constant="20" symbolic="YES" id="vJj-v0-9SF"/>
                 </constraints>
             </tableViewCellContentView>
