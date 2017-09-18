@@ -14,6 +14,7 @@
 
 - (void)loginSuccessfulWithWorlds:(NSArray *)worlds;
 - (void)loginFailedWithError:(NSError *)error;
+- (void)loginFailedWithMessage:(NSString *)message;
 
 @end
 

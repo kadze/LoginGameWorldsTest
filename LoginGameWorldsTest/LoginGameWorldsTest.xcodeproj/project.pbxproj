@@ -34,6 +34,11 @@
 		5E307F5C1F6EE3EE000CD620 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F521F6EE3EE000CD620 /* JSONKeyMapper.m */; };
 		5E307F5D1F6EE3EE000CD620 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E307F541F6EE3EE000CD620 /* JSONValueTransformer.m */; };
 		5E435F5F1F6EFC91000DEB70 /* SAPWorldStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E435F5E1F6EFC91000DEB70 /* SAPWorldStatus.m */; };
+		5E435F641F6F9497000DEB70 /* SAPActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E435F621F6F9497000DEB70 /* SAPActivityIndicator.m */; };
+		5E435F651F6F9497000DEB70 /* SAPActivityIndicator.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E435F631F6F9497000DEB70 /* SAPActivityIndicator.xib */; };
+		5E435F6F1F6F9C1F000DEB70 /* UIAlertAction+SAPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E435F6B1F6F9C1F000DEB70 /* UIAlertAction+SAPExtensions.m */; };
+		5E435F701F6F9C1F000DEB70 /* UIAlertController+SAPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E435F6E1F6F9C1F000DEB70 /* UIAlertController+SAPExtensions.m */; };
+		5E435F741F6FA260000DEB70 /* SAPLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E435F731F6FA260000DEB70 /* SAPLoginView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +96,19 @@
 		5E307F541F6EE3EE000CD620 /* JSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONValueTransformer.m; sourceTree = "<group>"; };
 		5E435F5D1F6EFC91000DEB70 /* SAPWorldStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPWorldStatus.h; sourceTree = "<group>"; };
 		5E435F5E1F6EFC91000DEB70 /* SAPWorldStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPWorldStatus.m; sourceTree = "<group>"; };
+		5E435F611F6F9497000DEB70 /* SAPActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPActivityIndicator.h; sourceTree = "<group>"; };
+		5E435F621F6F9497000DEB70 /* SAPActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPActivityIndicator.m; sourceTree = "<group>"; };
+		5E435F631F6F9497000DEB70 /* SAPActivityIndicator.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPActivityIndicator.xib; sourceTree = "<group>"; };
+		5E435F671F6F954D000DEB70 /* SAPLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPLoadingView.h; sourceTree = "<group>"; };
+		5E435F6A1F6F9C1F000DEB70 /* UIAlertAction+SAPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+SAPExtensions.h"; sourceTree = "<group>"; };
+		5E435F6B1F6F9C1F000DEB70 /* UIAlertAction+SAPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertAction+SAPExtensions.m"; sourceTree = "<group>"; };
+		5E435F6D1F6F9C1F000DEB70 /* UIAlertController+SAPExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+SAPExtensions.h"; sourceTree = "<group>"; };
+		5E435F6E1F6F9C1F000DEB70 /* UIAlertController+SAPExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+SAPExtensions.m"; sourceTree = "<group>"; };
+		5E435F721F6FA260000DEB70 /* SAPLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPLoginView.h; sourceTree = "<group>"; };
+		5E435F731F6FA260000DEB70 /* SAPLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPLoginView.m; sourceTree = "<group>"; };
+		5E435F751F6FA297000DEB70 /* SAPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPView.h; sourceTree = "<group>"; };
+		5E435F761F6FA2C7000DEB70 /* SAPViewWithLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewWithLoadingView.h; sourceTree = "<group>"; };
+		5E435F781F6FA874000DEB70 /* SAPViewControllerMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPViewControllerMacro.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +196,7 @@
 				5E307EE51F6E9F01000CD620 /* Functions */,
 				5E307EA61F6E763E000CD620 /* Categories */,
 				5E307EC11F6E7A43000CD620 /* Classes */,
+				5E435F771F6FA874000DEB70 /* Macros */,
 				5E307F3E1F6EE3EE000CD620 /* JSONModel */,
 			);
 			path = Library;
@@ -186,6 +205,8 @@
 		5E307EA61F6E763E000CD620 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				5E435F691F6F9C1F000DEB70 /* UIAlertAction */,
+				5E435F6C1F6F9C1F000DEB70 /* UIAlertController */,
 				5E307EA71F6E763E000CD620 /* UINib */,
 				5E307EAA1F6E763E000CD620 /* UITableView */,
 				5E307EAD1F6E763E000CD620 /* UIWindow */,
@@ -244,6 +265,7 @@
 				5E307EBC1F6E7868000CD620 /* SAPLoginViewController.h */,
 				5E307EBD1F6E7868000CD620 /* SAPLoginViewController.m */,
 				5E307EBE1F6E7868000CD620 /* SAPLoginViewController.xib */,
+				5E435F711F6FA231000DEB70 /* SAPLoginView */,
 			);
 			path = SAPLoginViewController;
 			sourceTree = "<group>";
@@ -251,7 +273,9 @@
 		5E307EC11F6E7A43000CD620 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				5E435F661F6F954D000DEB70 /* Protocols */,
 				5E307EC21F6E7A43000CD620 /* SAPTableViewCell */,
+				5E435F601F6F9497000DEB70 /* SAPActivityIndicator */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -413,6 +437,63 @@
 			path = SAPWorldStatus;
 			sourceTree = "<group>";
 		};
+		5E435F601F6F9497000DEB70 /* SAPActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				5E435F611F6F9497000DEB70 /* SAPActivityIndicator.h */,
+				5E435F621F6F9497000DEB70 /* SAPActivityIndicator.m */,
+				5E435F631F6F9497000DEB70 /* SAPActivityIndicator.xib */,
+			);
+			path = SAPActivityIndicator;
+			sourceTree = "<group>";
+		};
+		5E435F661F6F954D000DEB70 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5E435F671F6F954D000DEB70 /* SAPLoadingView.h */,
+				5E435F751F6FA297000DEB70 /* SAPView.h */,
+				5E435F761F6FA2C7000DEB70 /* SAPViewWithLoadingView.h */,
+			);
+			name = Protocols;
+			path = Source/Library/Protocols;
+			sourceTree = SOURCE_ROOT;
+		};
+		5E435F691F6F9C1F000DEB70 /* UIAlertAction */ = {
+			isa = PBXGroup;
+			children = (
+				5E435F6A1F6F9C1F000DEB70 /* UIAlertAction+SAPExtensions.h */,
+				5E435F6B1F6F9C1F000DEB70 /* UIAlertAction+SAPExtensions.m */,
+			);
+			path = UIAlertAction;
+			sourceTree = "<group>";
+		};
+		5E435F6C1F6F9C1F000DEB70 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				5E435F6D1F6F9C1F000DEB70 /* UIAlertController+SAPExtensions.h */,
+				5E435F6E1F6F9C1F000DEB70 /* UIAlertController+SAPExtensions.m */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
+		5E435F711F6FA231000DEB70 /* SAPLoginView */ = {
+			isa = PBXGroup;
+			children = (
+				5E435F721F6FA260000DEB70 /* SAPLoginView.h */,
+				5E435F731F6FA260000DEB70 /* SAPLoginView.m */,
+			);
+			path = SAPLoginView;
+			sourceTree = "<group>";
+		};
+		5E435F771F6FA874000DEB70 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				5E435F781F6FA874000DEB70 /* SAPViewControllerMacro.h */,
+			);
+			name = Macros;
+			path = ../Macros;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -477,6 +558,7 @@
 				5E307EB21F6E763E000CD620 /* Assets.xcassets in Resources */,
 				5E307EC01F6E7868000CD620 /* SAPLoginViewController.xib in Resources */,
 				5E307E9A1F6E7258000CD620 /* LaunchScreen.storyboard in Resources */,
+				5E435F651F6F9497000DEB70 /* SAPActivityIndicator.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,10 +572,13 @@
 				5E307E8F1F6E7258000CD620 /* AppDelegate.m in Sources */,
 				5E307EB31F6E763E000CD620 /* UINib+SAPExtensions.m in Sources */,
 				5E435F5F1F6EFC91000DEB70 /* SAPWorldStatus.m in Sources */,
+				5E435F701F6F9C1F000DEB70 /* UIAlertController+SAPExtensions.m in Sources */,
 				5E307F591F6EE3EE000CD620 /* JSONAPI.m in Sources */,
 				5E307EB41F6E763E000CD620 /* UITableView+SAPExtensions.m in Sources */,
 				5E307EC51F6E7A43000CD620 /* SAPTableViewCell.m in Sources */,
 				5E307EBF1F6E7868000CD620 /* SAPLoginViewController.m in Sources */,
+				5E435F641F6F9497000DEB70 /* SAPActivityIndicator.m in Sources */,
+				5E435F6F1F6F9C1F000DEB70 /* UIAlertAction+SAPExtensions.m in Sources */,
 				5E307EE41F6E9AD7000CD620 /* SAPDataTaskContext.m in Sources */,
 				5E307F5B1F6EE3EE000CD620 /* JSONModel+networking.m in Sources */,
 				5E307ECE1F6E8A2C000CD620 /* UIView+IBDesignable.m in Sources */,
@@ -508,6 +593,7 @@
 				5E307F5D1F6EE3EE000CD620 /* JSONValueTransformer.m in Sources */,
 				5E307ED71F6E8D82000CD620 /* SAPLoginContext.m in Sources */,
 				5E307F5C1F6EE3EE000CD620 /* JSONKeyMapper.m in Sources */,
+				5E435F741F6FA260000DEB70 /* SAPLoginView.m in Sources */,
 				5E307EDB1F6E8DE7000CD620 /* SAPNetworkManager.m in Sources */,
 				5E307F251F6EDE8E000CD620 /* SAPGameWorld.m in Sources */,
 			);

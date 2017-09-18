@@ -9,11 +9,19 @@
 #import "SAPLoginViewController.h"
 
 #import "SAPLoginContext.h"
+#import "SAPGameWorld.h"
+#import "SAPLoginView.h"
+
+#import "UIAlertController+SAPExtensions.h"
+
+#import "SAPViewControllerMacro.h"
 
 @interface SAPLoginViewController () <UITextFieldDelegate, SAPLoginContextDelegate>
 @property (nonatomic, strong) SAPLoginContext *loginContext;
 
 @end
+
+SAPViewControllerBaseViewProperty(SAPLoginViewController, SAPLoginView, mainView)
 
 @implementation SAPLoginViewController
 
@@ -27,13 +35,6 @@
     
     _loginContext = loginContext;
     [loginContext execute];
-}
-
-#pragma mark -
-#pragma mark View Lifecycle
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
 }
 
 #pragma mark -
@@ -54,10 +55,19 @@
 
 - (void)loginSuccessfulWithWorlds:(NSArray *)worlds {
     NSLog(@"%@", worlds);
+//    NSString *countryCode = [(SAPGameWorld *)worlds.firstObject country];
+//    NSString *countryName = [[NSLocale systemLocale] displayNameForKey:NSLocaleCountryCode value:countryCode];
+    [self.mainView setLoadingViewVisible:NO animated:NO completion:nil];
 }
 
 - (void)loginFailedWithError:(NSError *)error {
-    
+    [self loginFailedWithMessage:error.localizedDescription];
+}
+
+- (void)loginFailedWithMessage:(NSString *)message {
+    [self.mainView setLoadingViewVisible:NO animated:YES completion:^{
+        [UIAlertController presentAlertControllerWithTitle:@"Login failed" message:message];
+    }];
 }
 
 #pragma mark -
@@ -76,10 +86,11 @@
 #pragma mark Private
 
 - (void)login {
+    [self.passwordTextField resignFirstResponder];
+    [self.mainView setLoadingViewVisible:YES animated:YES completion:nil];
     self.loginContext = [SAPLoginContext contextWithLogin:self.emailTextField.text
                                                  password:self.passwordTextField.text
                                                  delegate:self];
 }
-
 
 @end

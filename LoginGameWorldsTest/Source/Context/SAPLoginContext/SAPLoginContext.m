@@ -71,6 +71,14 @@ static NSString * const kSAPAvailableWorldsKey = @"allAvailableWorlds";
     NSPropertyListFormat format;
     NSError *error;
     NSDictionary *plist = [NSPropertyListSerialization propertyListWithData:data options:0 format:&format error:&error];
+    
+    NSString *errorString = plist[@"error"];
+    if (errorString) {
+        [self.delegate loginFailedWithMessage:errorString];
+        
+        return;
+    }
+    
     NSArray *worldsInfo = plist[kSAPAvailableWorldsKey];
     NSMutableArray *worlds = [NSMutableArray new];
     for (NSDictionary *worldInfo in worldsInfo) {
