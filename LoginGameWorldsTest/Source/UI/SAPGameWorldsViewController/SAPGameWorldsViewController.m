@@ -37,6 +37,14 @@
     self.dataSoruce = dataSource;
     self.tableView.dataSource = dataSource;
     [self.tableView reloadData];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Logout" style:UIBarButtonItemStylePlain target:self action:@selector(onLogoutButton:)];
+}
+
+#pragma mark -
+#pragma mark Actions
+
+- (void)onLogoutButton:(UIBarButtonItem *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark -

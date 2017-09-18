@@ -11,6 +11,7 @@
 #import "SAPLoginContext.h"
 #import "SAPGameWorld.h"
 #import "SAPLoginView.h"
+#import "SAPGameWorldsViewController.h"
 
 #import "UIAlertController+SAPExtensions.h"
 
@@ -57,6 +58,11 @@ SAPViewControllerBaseViewProperty(SAPLoginViewController, SAPLoginView, mainView
     NSLog(@"%@", worlds);
 //    NSString *countryCode = [(SAPGameWorld *)worlds.firstObject country];
 //    NSString *countryName = [[NSLocale systemLocale] displayNameForKey:NSLocaleCountryCode value:countryCode];
+    SAPGameWorldsViewController *gameWorldsController = [SAPGameWorldsViewController new];
+    gameWorldsController.worlds = worlds;
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:gameWorldsController];
+    [self presentViewController:navController animated:YES completion:nil];
+    
     [self.mainView setLoadingViewVisible:NO animated:NO completion:nil];
 }
 
