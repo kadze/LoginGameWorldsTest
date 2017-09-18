@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad10_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,18 +19,17 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="SAPLoginView">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth-earth-at-night-night-lights-41949" translatesAutoresizingMaskIntoConstraints="NO" id="08D-ub-KKv">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="earth-earth-at-night-night-lights-41949" translatesAutoresizingMaskIntoConstraints="NO" id="08D-ub-KKv">
+                    <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                 </imageView>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="uPm-9f-OrR">
-                    <rect key="frame" x="62" y="150" width="250" height="157"/>
+                    <rect key="frame" x="139" y="150" width="556" height="157"/>
                     <subviews>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cbW-dh-Bku">
-                            <rect key="frame" x="0.0" y="0.0" width="250" height="30"/>
+                            <rect key="frame" x="0.0" y="0.0" width="556" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
@@ -39,7 +38,7 @@
                             </connections>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ntP-DZ-wiS">
-                            <rect key="frame" x="0.0" y="62" width="250" height="30"/>
+                            <rect key="frame" x="0.0" y="62" width="556" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
@@ -48,7 +47,7 @@
                             </connections>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5J-rh-sQ8">
-                            <rect key="frame" x="0.0" y="124" width="250" height="33"/>
+                            <rect key="frame" x="0.0" y="124" width="556" height="33"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <state key="normal" title="Login"/>
                             <userDefinedRuntimeAttributes>
@@ -69,7 +68,7 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBy-Ka-HSr">
-                    <rect key="frame" x="112.5" y="579" width="150" height="33"/>
+                    <rect key="frame" x="342" y="1024" width="150" height="33"/>
                     <color key="backgroundColor" red="0.77652478218078613" green="0.77735954523086548" blue="0.72729986906051636" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <state key="normal" title="Fill Test Credentials"/>
@@ -81,8 +80,12 @@
             <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="cBy-Ka-HSr" secondAttribute="bottom" constant="55" id="34d-ac-a68"/>
+                <constraint firstAttribute="trailing" secondItem="08D-ub-KKv" secondAttribute="trailing" id="Bbv-3b-IVU"/>
+                <constraint firstItem="08D-ub-KKv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Gra-2e-80T"/>
+                <constraint firstAttribute="bottom" secondItem="08D-ub-KKv" secondAttribute="bottom" id="KBb-le-Dhz"/>
                 <constraint firstItem="cBy-Ka-HSr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UKp-Cm-AY4"/>
                 <constraint firstItem="uPm-9f-OrR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bxH-Qv-thn"/>
+                <constraint firstItem="08D-ub-KKv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dAF-cs-qY6"/>
                 <constraint firstItem="uPm-9f-OrR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2:3" id="f4e-Zl-d7k"/>
                 <constraint firstItem="uPm-9f-OrR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="150" id="vJR-Uh-yCi"/>
             </constraints>
