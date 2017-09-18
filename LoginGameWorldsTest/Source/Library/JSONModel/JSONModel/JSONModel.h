@@ -3,6 +3,8 @@
 //  JSONModel
 //
 
+//https://github.com/jsonmodel/jsonmodel
+
 #import <Foundation/Foundation.h>
 
 #import "JSONModelError.h"

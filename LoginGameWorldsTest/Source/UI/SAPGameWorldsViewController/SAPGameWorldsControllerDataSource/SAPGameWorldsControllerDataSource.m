@@ -8,6 +8,11 @@
 
 #import "SAPGameWorldsControllerDataSource.h"
 
+#import "SAPGameWorldTableViewCell.h"
+#import "SAPGameWorldCellPesenter.h"
+
+#import "UITableView+SAPExtensions.h"
+
 @implementation SAPGameWorldsControllerDataSource
 
 #pragma mark -
@@ -36,7 +41,11 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return [UITableViewCell new];
+    SAPGameWorldTableViewCell *cell = [tableView cellWithClass:[SAPGameWorldTableViewCell class]];
+    SAPGameWorldCellPesenter *presenter = [SAPGameWorldCellPesenter presenterWithCell:cell model:self.worlds[indexPath.row]];
+    cell.presenter = presenter;
+                                           
+    return cell;
 }
 
 @end

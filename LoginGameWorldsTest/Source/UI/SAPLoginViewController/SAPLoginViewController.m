@@ -56,8 +56,6 @@ SAPViewControllerBaseViewProperty(SAPLoginViewController, SAPLoginView, mainView
 
 - (void)loginSuccessfulWithWorlds:(NSArray *)worlds {
     NSLog(@"%@", worlds);
-//    NSString *countryCode = [(SAPGameWorld *)worlds.firstObject country];
-//    NSString *countryName = [[NSLocale systemLocale] displayNameForKey:NSLocaleCountryCode value:countryCode];
     SAPGameWorldsViewController *gameWorldsController = [SAPGameWorldsViewController new];
     gameWorldsController.worlds = worlds;
     UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:gameWorldsController];

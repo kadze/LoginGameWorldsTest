@@ -39,6 +39,10 @@ static NSTimeInterval const kSAPRequestTimeout = 120;
     return [NSURL URLWithString:[self urlStringForRequest]];
 }
 
+- (NSDictionary *)requestDictionary {
+    return @{@"":@""};
+}
+
 - (SAPHTTPMethod)httpMethod {
     return kSAPHttpMethodPost;
 }

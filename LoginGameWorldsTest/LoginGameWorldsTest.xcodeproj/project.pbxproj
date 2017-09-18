@@ -42,6 +42,9 @@
 		5E435F7D1F6FAADF000DEB70 /* SAPGameWorldsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E435F7B1F6FAADF000DEB70 /* SAPGameWorldsViewController.m */; };
 		5E435F7E1F6FAADF000DEB70 /* SAPGameWorldsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E435F7C1F6FAADF000DEB70 /* SAPGameWorldsViewController.xib */; };
 		5E435F841F6FACAA000DEB70 /* SAPGameWorldsControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E435F831F6FACAA000DEB70 /* SAPGameWorldsControllerDataSource.m */; };
+		5E435F881F6FB32A000DEB70 /* SAPGameWorldTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E435F861F6FB32A000DEB70 /* SAPGameWorldTableViewCell.m */; };
+		5E435F891F6FB32A000DEB70 /* SAPGameWorldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E435F871F6FB32A000DEB70 /* SAPGameWorldTableViewCell.xib */; };
+		5E435F8C1F6FB46C000DEB70 /* SAPGameWorldCellPesenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E435F8B1F6FB46C000DEB70 /* SAPGameWorldCellPesenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -117,6 +120,12 @@
 		5E435F7C1F6FAADF000DEB70 /* SAPGameWorldsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPGameWorldsViewController.xib; sourceTree = "<group>"; };
 		5E435F821F6FACAA000DEB70 /* SAPGameWorldsControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPGameWorldsControllerDataSource.h; sourceTree = "<group>"; };
 		5E435F831F6FACAA000DEB70 /* SAPGameWorldsControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPGameWorldsControllerDataSource.m; sourceTree = "<group>"; };
+		5E435F851F6FB32A000DEB70 /* SAPGameWorldTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPGameWorldTableViewCell.h; sourceTree = "<group>"; };
+		5E435F861F6FB32A000DEB70 /* SAPGameWorldTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPGameWorldTableViewCell.m; sourceTree = "<group>"; };
+		5E435F871F6FB32A000DEB70 /* SAPGameWorldTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SAPGameWorldTableViewCell.xib; sourceTree = "<group>"; };
+		5E435F8A1F6FB46C000DEB70 /* SAPGameWorldCellPesenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPGameWorldCellPesenter.h; sourceTree = "<group>"; };
+		5E435F8B1F6FB46C000DEB70 /* SAPGameWorldCellPesenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAPGameWorldCellPesenter.m; sourceTree = "<group>"; };
+		5E435F8D1F6FB576000DEB70 /* SAPTableViewCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAPTableViewCellPresenter.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +212,7 @@
 			children = (
 				5E307EE51F6E9F01000CD620 /* Functions */,
 				5E307EA61F6E763E000CD620 /* Categories */,
+				5E435F661F6F954D000DEB70 /* Protocols */,
 				5E307EC11F6E7A43000CD620 /* Classes */,
 				5E435F771F6FA874000DEB70 /* Macros */,
 				5E307F3E1F6EE3EE000CD620 /* JSONModel */,
@@ -282,7 +292,6 @@
 		5E307EC11F6E7A43000CD620 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5E435F661F6F954D000DEB70 /* Protocols */,
 				5E307EC21F6E7A43000CD620 /* SAPTableViewCell */,
 				5E435F601F6F9497000DEB70 /* SAPActivityIndicator */,
 			);
@@ -462,6 +471,7 @@
 				5E435F671F6F954D000DEB70 /* SAPLoadingView.h */,
 				5E435F751F6FA297000DEB70 /* SAPView.h */,
 				5E435F761F6FA2C7000DEB70 /* SAPViewWithLoadingView.h */,
+				5E435F8D1F6FB576000DEB70 /* SAPTableViewCellPresenter.h */,
 			);
 			name = Protocols;
 			path = Source/Library/Protocols;
@@ -528,6 +538,9 @@
 		5E435F801F6FAB22000DEB70 /* SAPGameWorldTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				5E435F851F6FB32A000DEB70 /* SAPGameWorldTableViewCell.h */,
+				5E435F861F6FB32A000DEB70 /* SAPGameWorldTableViewCell.m */,
+				5E435F871F6FB32A000DEB70 /* SAPGameWorldTableViewCell.xib */,
 			);
 			path = SAPGameWorldTableViewCell;
 			sourceTree = "<group>";
@@ -535,6 +548,8 @@
 		5E435F811F6FAB5E000DEB70 /* SAPGameWorldCellPesenter */ = {
 			isa = PBXGroup;
 			children = (
+				5E435F8A1F6FB46C000DEB70 /* SAPGameWorldCellPesenter.h */,
+				5E435F8B1F6FB46C000DEB70 /* SAPGameWorldCellPesenter.m */,
 			);
 			path = SAPGameWorldCellPesenter;
 			sourceTree = "<group>";
@@ -601,6 +616,7 @@
 			files = (
 				5E435F7E1F6FAADF000DEB70 /* SAPGameWorldsViewController.xib in Resources */,
 				5E307F551F6EE3EE000CD620 /* Info.plist in Resources */,
+				5E435F891F6FB32A000DEB70 /* SAPGameWorldTableViewCell.xib in Resources */,
 				5E307EB21F6E763E000CD620 /* Assets.xcassets in Resources */,
 				5E307EC01F6E7868000CD620 /* SAPLoginViewController.xib in Resources */,
 				5E307E9A1F6E7258000CD620 /* LaunchScreen.storyboard in Resources */,
@@ -618,6 +634,8 @@
 				5E435F7D1F6FAADF000DEB70 /* SAPGameWorldsViewController.m in Sources */,
 				5E307E8F1F6E7258000CD620 /* AppDelegate.m in Sources */,
 				5E307EB31F6E763E000CD620 /* UINib+SAPExtensions.m in Sources */,
+				5E435F8C1F6FB46C000DEB70 /* SAPGameWorldCellPesenter.m in Sources */,
+				5E435F881F6FB32A000DEB70 /* SAPGameWorldTableViewCell.m in Sources */,
 				5E435F5F1F6EFC91000DEB70 /* SAPWorldStatus.m in Sources */,
 				5E435F701F6F9C1F000DEB70 /* UIAlertController+SAPExtensions.m in Sources */,
 				5E307F591F6EE3EE000CD620 /* JSONAPI.m in Sources */,

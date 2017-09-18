@@ -7,7 +7,7 @@
 //
 #import <UIKit/UIScreen.h>
 
-#import "UIWindow+SAPextensions.h"
+#import "UIWindow+SAPExtensions.h"
 
 @implementation UIWindow (SAPextensions)
 
